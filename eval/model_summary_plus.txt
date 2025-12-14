@@ -1,0 +1,7 @@
+Model Name                                         | Accuracy   | F1 Score   | Eval Loss  | Train Loss | Epoch
+--------------------------------------------------------------------------------------------------------------
+distilbert-base-smooth-warmup-cleanv2-1209         | 0.9744     | 0.9744     | 0.9622     | 0.9783     | 2.4
+1214/1214-clean-head-early-real                    | 0.9743     | 0.9743     | 0.9626     | 0.9786     | 2.4
+distilbert-base-dataset-3epoch                     | 0.9715     | 0.9715     | 0.3657     | 0.3027     | 4.0
+distilbert-base-dataset-early                      | 0.9710     | 0.9710     | 0.3583     | 0.3534     | 2.2
+1209/distilbert-lr-warmup-batch64-epoch3-balabala  | 0.8646     | 0.8645     | 0.3511     | 0.4431     | 3.0

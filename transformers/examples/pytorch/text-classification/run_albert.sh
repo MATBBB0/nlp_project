@@ -1,0 +1,16 @@
+CUDA_VISIBLE_DEVICES=3 python run_classification.py \
+    --model_name_or_path albert/albert-base-v2 \
+    --train_file /HOME/sysu_grwang/sysu_grwang_1/HDD_POOL/zjq/nlp-project/data/train.csv \
+    --validation_file /HOME/sysu_grwang/sysu_grwang_1/HDD_POOL/zjq/nlp-project/data/valid.csv \
+    --test_file /HOME/sysu_grwang/sysu_grwang_1/HDD_POOL/zjq/nlp-project/data/test.csv \
+    --shuffle_train_dataset \
+    --text_column_name "text" \
+    --label_column_name "label" \
+    --do_train \
+    --do_eval \
+    --do_predict \
+    --max_seq_length 512 \
+    --per_device_train_batch_size 32 \
+    --learning_rate 2e-5 \
+    --num_train_epochs 1 \
+    --output_dir /HOME/sysu_grwang/sysu_grwang_1/HDD_POOL/zjq/nlp-project/output/albert/
